@@ -4,8 +4,8 @@ import random
 
 from clear import clear
 
-from Day7 import hangman_words, hangman_art
-from Day7.hangman_art import stages
+from Day007 import hangman_words, hangman_art
+from Day007.hangman_art import stages
 
 # TODO-1: - Update the word list to use the 'word_list' from hangman_words.py
 # Delete this line: word_list = ["ardvark", "baboon", "camel"]

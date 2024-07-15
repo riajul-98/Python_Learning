@@ -1,6 +1,6 @@
 import os
 
-from Day9 import art
+from Day009 import art
 
 # HINT: You can call clear() to clear the output in the console.
 
