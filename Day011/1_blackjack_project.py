@@ -3,6 +3,8 @@ import random
 
 from replit import clear
 
+from Day011.art import logo
+
 # Difficulty Normal 😎: Use all Hints below to complete the project.
 # Difficulty Hard 🤔: Use only Hints 1, 2, 3 to complete the project.
 # Difficulty Extra Hard 😭: Only use Hints 1 & 2 to complete the project.
@@ -66,6 +68,7 @@ def compare(user_score, computer_score):
 
 # Hint 5: Deal the user and computer 2 cards each using deal_card() and append().
 def play_game():
+    print(logo)
     user_cards = []
     computer_cards = []
     is_game_over = False
@@ -112,6 +115,7 @@ def play_game():
         # print(computer_cards)
 
     if is_game_over:
+        print(f"Computers final score was {computer_score}.")
         go_again = input("Would you like to play again? Type 'y' for yes, 'n' for no: ").lower()
         if go_again == "y":
             clear
