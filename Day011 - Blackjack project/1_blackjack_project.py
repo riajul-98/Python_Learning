@@ -3,7 +3,7 @@ import random
 
 from replit import clear
 
-from Day011.art import logo
+from art import logo
 
 # Difficulty Normal 😎: Use all Hints below to complete the project.
 # Difficulty Hard 🤔: Use only Hints 1, 2, 3 to complete the project.

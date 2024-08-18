@@ -1,6 +1,6 @@
 import os
 
-from Day009 import art
+import art
 
 # HINT: You can call clear() to clear the output in the console.
 
@@ -13,7 +13,7 @@ while another_bidder:
     amount = int(input("What's your bid? $"))
     bids[name] = amount
     more_bidders = input("Are there any other bidders? Type 'yes' or 'no': ").lower()
-    os.system("cls")
+    print("\n" * 100)
     if more_bidders == "no":
         another_bidder = False
 
