@@ -30,7 +30,7 @@ while more_states:
         if answer_state == state and answer_state not in guessed_states:
             guessed_states.append(answer_state)
             row = data[data.state == answer_state]
-            writer.goto(int(row["x"]), int(row["y"]))
+            writer.goto(float(row["x"]), float(row["y"]))
             writer.write(arg=state, align="center", font=("Courier", 10, "normal"))
             score += 1
 
