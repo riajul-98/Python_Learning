@@ -26,6 +26,19 @@ while more_states:
     screen.update()
     answer_state = screen.textinput(title=f"Guess the state ({score}/50)", prompt="Enter a state: ").title()
 
+    if answer_state == "Exit":
+        unguessed_states = [state for state in data["state"] if state not in guessed_states]
+        # for state in data["state"]:
+        #     if state not in guessed_states:
+        #         unguessed_states.append(state)
+        print(unguessed_states)
+
+        new_data = pd.DataFrame(unguessed_states)
+        new_data.to_csv("./missing_states.csv")
+
+
+        break
+
     for state in data["state"]:
         if answer_state == state and answer_state not in guessed_states:
             guessed_states.append(answer_state)
@@ -36,7 +49,5 @@ while more_states:
 
         if score == 50:
             more_states = False
-
-
 
 screen.mainloop()
